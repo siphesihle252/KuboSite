@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: rgb(0, 0, 0);
+    color: rgb(92, 135, 143);
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:1em;
+}
+Header img{
+ float: right;
+}
+.container{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+.brand{
+    text-align: center;
+}
+.brand span{
+    color: rgb(255, 255, 255);
+}
+.wrapper{
+    box-shadow: 0 0 20px 0 rgb(90, 189, 216);
+}
+.wrapper > *{
+    padding: 1em;
+}
+.company-info{
+    background: whitesmoke ;
+}
+.company-info h3, .company-info ul{
+    text-align: center;
+    margin: 0 0 1em 0;
+}
+.contact{
+    background-color: rgb(199, 46, 46);
+    background-position: center;
+}
+
+/* STYLING FORM */
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label{
+    display: block;
+}
+
+.contact form p{
+    margin: 0;
+}
+.contact form .full{
+    grid-column: 1 / 3;
+}
+
+.contact form button, .contact form input, .contact form textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid rgb(79, 117, 214);
+}
+.contact form button{
+    background-color: rgb(69, 68, 102);
+    border: 0;
+    text-transform: uppercase;
+}
+.contact form button:hover,.contact form button:focus{
+    background: rgb(8, 173, 50);
+    color:white;
+    outline: 0;
+}
+
+/* Large Screens */
+@media(min-width:700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .wrapper >*{
+        padding: 2em;
+    }
+    .company-info h3, .company-info ul, .brand{
+        text-align: left;
+    }
+}
+.hero-image {
+    text-align: center;
+    position: sticky;
+    top: 50%;
+    bottom: 50%;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius: 40px 40px 40px 40px;
+}
+.alert {
+    color: whitesmoke;
+    background-color: rgb(8, 173, 50);
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 15px;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: none;
+  }
+  .topnav {
+    flex-grow: 1;
+    overflow: hidden;
+    text-align: center;
+  }
+  .topnav a{
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 30px;
+    
+  }
+  .active{
+      background-color: rgb(247, 10, 10);
+      border-radius: 20px;
+      color: rgb(0, 0, 0);
+  }
+
+  .topnav a:hover{
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      border-radius: 20px;
+    }
